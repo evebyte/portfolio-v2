@@ -2,10 +2,10 @@
 const today = new Date();
 ---
 
-<footer>
+<footer class="text-center font-bold text-green-900 py-8">
 	&copy; {today.getFullYear()} Eve. All rights reserved.
-	<div class="social-links">
-		<!-- <a href="https://twitter.com/astrodotbuild" target="_blank">
+	<div class="social-links flex justify-center mt-2">
+		<!-- <a href="https://twitter.com/astrodotbuild" target="_blank" class="text-green-900 hover:text-green-600">
 			<span class="sr-only">Follow Astro on Twitter</span>
 			<svg
 				viewBox="0 0 16 16"
@@ -19,7 +19,11 @@ const today = new Date();
 				></path></svg
 			>
 		</a> -->
-		<a href="https://github.com/evebyte" target="_blank">
+		<a
+			href="https://github.com/evebyte"
+			target="_blank"
+			class="text-green-900 hover:text-green-600"
+		>
 			<span class="sr-only">Go to Astro's GitHub repo</span>
 			<svg
 				viewBox="0 0 16 16"
@@ -35,24 +39,4 @@ const today = new Date();
 		</a>
 	</div>
 </footer>
-<style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-		color: rgb(var(--gray));
-	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
-	}
-</style>
+<style></style>
