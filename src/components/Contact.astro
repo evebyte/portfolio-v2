@@ -5,7 +5,9 @@
 ---
 
 <section
-	class="h-screen md:h-[80vh] flex flex-col justify-center text-center font-bold relative bg-[#db3843]"
+	class="h-screen md:h-[80vh] flex flex-col justify-center text-center font-bold relative
+    
+    bg-gradient-to-r from-red-500 to-[#db3843]"
 	id="contact"
 >
 	<!-- <div class="contact-wave">
@@ -62,7 +64,11 @@
 					href={href as string}
 					target="_blank"
 					class="bg-red-950 text-red-200
-                    rounded-full inline-block hover:scale-110 active:scale-90 mx-2 p-3 drop-shadow-lg"
+                    hover:bg-yellow-500 hover:text-yellow-950
+                    rounded-full inline-block 
+                    active:scale-90 hover:scale-110 
+                    transition duration-300 ease-in-out
+                    mx-2 p-3 drop-shadow-lg"
 				>
 					{faIcon} {anchorText}
 				</a>
