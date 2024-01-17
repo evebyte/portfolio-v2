@@ -1,7 +1,7 @@
 ---
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPaperPlane, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-// import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 ---
 
 <section
@@ -42,7 +42,7 @@
 				[
 					"linkEmail",
 					"mailto:rq75acik2@mozmail.com",
-					// <FontAwesomeIcon icon={faEnvelope} />,
+					<FontAwesomeIcon icon={faEnvelope} />,
 					"email",
 				],
 
@@ -56,7 +56,7 @@
 				[
 					"linkGithub",
 					"https://github.com/evebyte",
-					// <FontAwesomeIcon icon={faGithub} />,
+					<FontAwesomeIcon icon={faGithub} />,
 					"github",
 				],
 			].map(([id, href, faIcon, anchorText]) => (
@@ -70,7 +70,10 @@
                     transition duration-300 ease-in-out
                     mx-2 p-3 drop-shadow-lg"
 				>
-					{faIcon} {anchorText}
+					<span class="flex items-center">
+						<span class="h-5 w-5">{faIcon}</span>{" "}
+						<span class="ml-2">{anchorText}</span>
+					</span>
 				</a>
 			))
 		}
